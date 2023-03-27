@@ -107,6 +107,8 @@ export class LoginComponent implements OnInit {
   }
   openModelLog() {
     this.formModalLog.show();
+    const backdrop = document.getElementsByClassName("modal-backdrop")[0] as HTMLElement;
+    backdrop.style.zIndex = "-1";
   }
   doSomethingLog() {
     this.formModalLog.hide()

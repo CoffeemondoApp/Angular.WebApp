@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "coffeemondo-365813"
-  }
+    "default": "coffeemondoangular",
+    "webAngular": "coffeemondoangular"
+  },
+  "targets": {},
+  "etags": {}
 }

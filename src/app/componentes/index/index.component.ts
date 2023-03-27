@@ -33,12 +33,16 @@ export class IndexComponent implements OnInit {
   }
   openModelLog(){
     this.formModalLog.show();
+    const backdrop = document.getElementsByClassName("modal-backdrop")[0] as HTMLElement;
+  backdrop.style.zIndex = "-1";
   }
   doSomethingLog(){
     this.formModalLog.hide()
   }
   openModelReg(){
     this.formModalReg.show();
+    const backdrop = document.getElementsByClassName("modal-backdrop")[0] as HTMLElement;
+    backdrop.style.zIndex = "-1";
   }
   doSomethingReg(){
     this.formModalReg.hide()
